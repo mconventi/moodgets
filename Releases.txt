@@ -1,0 +1,40 @@
+News in release 0.08
+- Solved bug about editable fields size for editable grid plugin 
+- New DatePicker versioning
+- Solved bug of january in date picker
+- Solved bug of date picker that didn't allows to use more date picker into the same page
+- ConstrainedSelectionTreePlugin
+
+News in release 0.07
+- Fixed Grid and Tree bottom bar bugs
+- Tree dynamic remote loading
+- Tree node editing
+- Tree node save
+- Tree node reset
+- EditableTreeNodePlugin
+- New widget Rss Reader
+
+News in release 0.06
+- Fixed some grid IE visualization bugs
+- Fixed bug on date picker elements: sometimes when edited the date changed
+- EditablePlugin now sets focus on first editable object when creates a new row
+- Tree widget
+
+News in release 0.05
+- Input data validation
+- Summary plugin
+- Formatted data plugin
+- Solved some grid bugs
+
+News in moodgets 0.04
+- Solved bug addOption in Select
+- Wait message box
+- Disabled toolbar and buttons
+- New buttons over action
+- TabPanel
+
+News in moodgets 0.03
+- Server request to save data 
+- All widgets on single js file 
+- Solved pagination size bug 
+- Solved bug with which date picker was hidden by grid 

@@ -1,0 +1,711 @@
+/* ************************************** */
+/* *********** CSS Reset code *********** */
+/* ************************************** */
+* {
+	outline: 0;
+	margin: 0;
+	
+}
+/* ************************************** */
+/* ************ Commons style *********** */
+/* ************************************** */
+.hidden {
+	display:none !important;
+}
+.visible { }
+.disabled {
+	color: #ccc;
+	filter:alpha(opacity=60) !important;
+	-moz-opacity:0.6 !important;
+	opacity:0.6 !important;	
+	cursor: default !important;
+}
+.centerTextAlign {
+	text-align: center !important;
+}
+.leftTextAlign {
+	text-align: left !important;
+}
+.rightTextAlign {
+	text-align: right !important;
+}
+input {
+	/*color:#777777;*/	
+	font-size:10px;
+	margin: 2px;
+}
+select {
+	/*color:#777777;*/	
+	font-size:10px;
+	margin:2px;
+}
+.checkbox {
+padding:0px; margin:0px;
+}
+.group {
+	background: none;
+	float: left;
+}
+
+/* ************************************** */
+/* ************ Button style ************ */
+/* ************************************** */
+.button {
+	height:16px;
+	border: 0px solid #ccc;
+	cursor: pointer;
+	overflow: hidden;
+	cursor: pointer;
+	/*filter:alpha(opacity=100);*/
+	-moz-opacity:1.0;
+	opacity:1.0;
+	background-position:0px 0px;	
+}
+.buttonHover {
+	/*filter:alpha(opacity=70);*/
+	-moz-opacity:0.70;
+	opacity:0.70;	
+}
+.btnSeparator {
+	float: left;
+	height: 22px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #fff;
+	margin: 2px;
+}
+
+/* ************************************** */
+/* ************ DatePicker style *********** */
+/* ************************************** */
+input.DatePicker{
+	cursor: pointer;
+	padding: 2px 0px 0px 20px;
+	background: #fff url(../../images/grid/calendar.gif) no-repeat top left;
+}
+.dp_container{
+	position: absolute; 
+	padding: 0;
+	z-index: 500;
+}
+.dp_cal{
+	background-color: #fff;
+	border: 1px solid #DDDDDD;
+	position: absolute;
+	width: 177px;
+	top: 24px;
+	left: 0;
+	margin: 0px 0px 3px 0px;
+}
+.dp_cal table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.dp_cal select{
+	margin: 2px 3px;
+	font-size: 11px;
+}
+.dp_cal select option{
+	padding: 1px 3px;
+}
+.dp_cal th, .dp_cal td{
+	width: 14.2857%;
+	text-align: center;
+	font-size: 11px;
+	padding: 2px 0;
+}
+.dp_cal th{
+	border: solid #DDDDDD; /*#aad4f2;*/
+	border-width: 1px 0;
+	color: #797774;
+	background: #F7F7F7; /*#daf2e6;*/
+	font-weight: bold;
+}
+.dp_cal td{
+	cursor: pointer;
+}
+.dp_cal thead th{
+	background: #F7F7F7; /*#d9eefc;*/
+}
+.dp_cal thead th .yearNextBtn{
+	background: url(../../images/date_picker/up.gif) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	width:8px;
+	height:7px;
+	float:top;
+}
+.dp_cal thead th .yearBeforeBtn{
+	background: url(../../images/date_picker/down.gif) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	width:8px;
+	height:7px;
+	float:bottom;
+}
+.dp_cal td.dp_roll{
+	color: #000;
+	background: #F7F7F7; /*#fff6bf;*/
+}
+/* must have this for the IE6 select box hiding */
+.dp_hide{
+	visibility: hidden;
+}
+.dp_empty{
+	background: #eee;
+}
+.dp_today{
+	background: #daf2e6;
+}
+.dp_selected{
+	color: #fff;
+	background: #328dcf;
+}
+/* ************************************** */
+/* ************ Toolbar style *********** */
+/* ************************************** */
+.toolbar {
+	background: url(../../images/grid/wbg.gif) repeat-x 0 -1px;
+	/*border-top: 1px solid #ccc;*/
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	height: 25px;
+	white-space: nowrap;
+}
+.toolbar div.panel {
+	margin: 2px;
+	margin-left: -2px;
+	float: left;
+	width: 1024px;
+}	
+.toolbar div.group {
+	background: none;
+	height: 24px;
+	margin: 0px 5px;
+}
+.toolbar select {
+	margin-top:2px;
+}
+.toolbar input {
+	vertical-align: text-top;
+	position: relative;
+	/*top: 2px;*/
+}
+.toolbar div.btnSeparator {
+	height:19px;
+}
+.toolbar .button {
+	float: left;
+	/*width:16px;*/
+	height:16px;
+	cursor: pointer;
+	overflow: hidden;
+	margin-top:3px;
+	cursor: pointer;
+}
+
+/* ************************************** */
+/* ************ Paginator style *********** */
+/* ************************************** */	
+.paginator {}
+.paginator .button {
+	padding: 0px !important;
+}
+.paginator .buttonHover {
+	background-position:-16px 0px !important;
+}
+.paginator .pageStat, .toolbar .pageControl {
+	position: relative;
+	top: 5px;
+	overflow: visible;
+	font-size:10px;
+	color:#777777;
+}
+.pageFirst {
+	background: url(../../images/grid/first.gif) no-repeat ;
+	width:16px;
+}
+.pagePrev {
+	background: url(../../images/grid/prev.gif) no-repeat;
+	width:16px;
+}
+.pageNext {
+	background: url(../../images/grid/next.gif) no-repeat;
+	width:16px;
+}
+.pageLast {
+	background: url(../../images/grid/last.gif) no-repeat;
+	width:16px;
+}
+.pageReload {
+	background: url(../../images/grid/refresh.gif) no-repeat;
+	width:16px;
+}
+.pageReload .loading {
+	background: url(../../images/grid/load.gif) no-repeat;
+	width:16px;
+	background-position:0 0 !important;
+}
+
+/* ************************************** */
+/* ************ Grid style *********** */
+/* ************************************** */
+.grid {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	position: relative;
+	border: 1px solid #ccc;
+	overflow:visible; 	
+}
+.grid input {
+	margin:0;
+	height:14px;
+}
+.grid div.gridHeaderBox {
+	position:relative;
+	overflow:hidden;
+}
+.grid div.gridHeader  {
+	background: #fafafa url(../../images/grid/fhbg.gif) repeat-x bottom;
+	position: relative;
+	border-bottom: 0px;
+	overflow: hidden;
+}	
+.grid div.gridBody  {
+	border-top: 0px;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+	overflow: auto;
+	position: relative;
+}
+.grid div.gridBody .group {
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #fff;
+}
+.grid div.gridHeader .th, .grid  div.gridBody .td {
+	text-align: center;
+	vertical-align: top !important;		
+	display:inline-block;
+	float:left;	
+	white-space:nowrap;
+	overflow:hidden;
+	/*padding-left:5px;*/
+	-moz-user-select:none;
+	cursor:pointer;
+	line-height:24px;	
+}
+.grid div.gridHeader div.th {
+	border-bottom: 1px solid #CCC;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #fff;
+}
+.grid div.gridBody ul.gridBodyTree {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+.grid div.gridBody ul.gridBodyTree li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	overflow:hidden;
+	border-bottom: 0px solid #fff;
+}
+.grid li.erow  {
+	background-color: #f7f7f7;
+}
+.grid li.erow.over {
+	background-color: #eaeff4;
+}
+.grid li.selected {
+	background-color: #d9e6f4 !important;
+}
+.grid li.over {
+	background-color: #eaeff4;
+}
+.grid li.editableObj { }
+.grid div.columnDrag {
+	float: left;
+	position: absolute;
+	z-index: 2;
+	overflow: visible;
+}
+.grid div.columnDrag div {
+	float: left;
+	background: none;
+	display: block;
+	position: absolute;
+	height: 24px;
+	width: 5px;
+	cursor: col-resize;
+}
+.grid div.columnDrag div.dragging {
+	background: url(../../images/grid/line.gif) repeat-y 2px center;
+}
+.grid div.modifiedCell {	
+    background: transparent url(../../images/grid/dirty.gif) no-repeat 0 0;
+}
+/* ************************************** */
+/* ************** Sort plugin************ */
+/* ************************************** */
+.grid div.gridHeader div.DESC {
+	background: url(../../images/grid/dn.png) no-repeat center top;
+	border-bottom: 1px solid orange !important;
+}	
+
+.grid div.gridHeader  div.ASC {
+	background: url(../../images/grid/up.png) no-repeat center top;
+	border-bottom: 1px solid orange !important;
+}
+
+/* ************************************** */
+/* ******* Column ordering ************** */
+/* ************************************** */
+.grid .orderingColumn {
+	background-color: #d9e6f4  !important;
+}	
+
+/* ************************************** */
+/* ******* Editable plugin ************** */
+/* ************************************** */
+.grid .createRowBtn {
+	background: url(../../images/grid/add.gif) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	padding-left: 18px;
+}	
+.grid .deleteRowBtn {
+	background: url(../../images/grid/delete.gif) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	padding-left: 18px;
+}	
+.grid .saveRowBtn {
+	background: url(../../images/grid/save.gif) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	padding-left: 18px;
+}	
+.grid .deleted {
+	color:#ff0000;
+	text-decoration: line-through;
+	font-style: italic;
+}
+.grid .invalidElement {
+	background: url(../../images/grid/invalid.gif) repeat-x bottom !important;
+}
+.grid .checkbox {
+	margin-top: 5px;
+}
+
+/* ************************************** */
+/* ******** Summary plugin ************** */
+/* ************************************** */
+.grid div.gridBody ul.gridBodyTree li.gridSummaryRow {
+	background-color: #E1E2E4;
+}	
+.grid  div.gridBody ul.gridBodyTree li.gridSummaryRow .td {
+	color: #333333;
+	cursor: default;
+	font-weight:bold;
+}
+
+/* ************************************** */
+/* ******* Dialog Box ******************* */
+/* ************************************** */
+#DialogBox-Box {
+  padding-bottom: 24px;
+  background: url('../../images/dialog/bg-box-bottom.png') bottom left no-repeat !important;
+  background: url('../../images/dialog/bg-box-bottom.gif') bottom left no-repeat;
+}
+#DialogBox-InBox {
+  padding-top: 15px;
+  background: url('../../images/dialog/bg-box-top.png') top left no-repeat !important;	
+  background: url('../../images/dialog/bg-box-top.gif') top left no-repeat;	
+}
+#DialogBox-BoxContent {
+  background: url('../../images/dialog/bg-box-body.png') top left repeat-y !important;
+  background: url('../../images/dialog/bg-box-body.gif') top left repeat-y;
+  padding: 0px 20px;
+  white-space: normal;
+}
+#DialogBox-BoxContainer {
+  padding: 0px 0px 5px 55px;
+  text-align: left;
+  font-family:Verdana;
+  font-size:12px;
+  color:#000;
+}
+#DialogBox-BoxContainer h1,#DialogBox-BoxContainer h2,#DialogBox-BoxContainer h3,#DialogBox-BoxContainer b,#DialogBox-BoxContainer strong{
+  text-align: left;
+  font-family:Verdana;
+  font-size:12px;
+  color:#000;
+  font-weight:bold;
+  margin:0px;
+  padding:0px;
+}
+#DialogBox-Buttons{ }
+#DialogBox-Buttons .okBtn {
+	background: url(../../images/dialog/okBtn.png) top right no-repeat;
+}
+#DialogBox-Buttons .cancelBtn {
+	background: url(../../images/dialog/cancelBtn.png) top right no-repeat;
+}
+#DialogBox-Buttons .button {
+  margin: 10px 10px;
+  width:24px;
+  height:24px;
+}
+#DialogBox-BoxContainer #BoxPromptInput {
+  margin-top:5px;
+}
+#DialogBox-Box .BoxAlert {
+  background: url('../../images/dialog/dialog-warning.png') top left no-repeat;
+}
+#DialogBox-Box .BoxConfirm {
+  background: url('../../images/dialog/dialog-help.png') top left no-repeat;
+}
+#DialogBox-Box .BoxPrompt {
+  background: url('../../images/dialog/dialog-help.png') top left no-repeat;
+}
+#DialogBox-Box .BoxInfo {
+  background: url('../../images/dialog/dialog-information.png') top left no-repeat;
+}
+#DialogBox-Box .BoxError {
+  background: url('../../images/dialog/dialog-error.png') top left no-repeat;
+}
+#DialogBox-Box .BoxWait {
+  background: url('../../images/dialog/wait.gif') top left no-repeat;
+}
+
+/* ************************************** */
+/* ********** TabPanel style ************ */
+/* ************************************** */
+.tabPanel { }
+.tabTitle {
+	color: #b7b8bb;
+	float: left;
+	padding: 2px 8px 2px 8px;
+	margin-right: 2px;
+	cursor: pointer;
+	list-style-image: none;
+	list-style-type: none;
+	height: 24px;	
+}
+.tabTitleMouseOver {
+	background-color: #eee;
+}
+.activeTabTitle {
+	background-color: #eee;
+	font-weight: bold;
+	color: #07487b;
+	border: 1px solid #ccc;
+	border-bottom: 0px;
+}
+.tabContent {
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: -1px;
+	clear: both;
+	border: 1px solid #ccc;	
+}
+.activeTabContent {
+	display: block;
+}
+
+/* ************************************** */
+/* ************ Tree style ************** */
+/* ************************************** */
+.tree {
+	/*background-color: #f7f7f7;*/
+	border: 1px solid #ccc;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	white-space: nowrap;
+	overflow: visible;
+	position: relative;
+}
+.tree div.treeBody  {
+	border-top: 0px;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+	overflow: auto;
+	position: relative;
+}
+.tree .treeNode {
+	margin:0;
+	padding:0;
+}
+.tree .treeNodeText {
+	padding-top: 3px;
+	height: 15px;
+	cursor: pointer;
+}
+.tree .treeNodeImg {
+	float: left;
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+}
+.tree .treeNodeDefaultImg {
+	background-image: url('../../images/tree/tree.gif');
+}
+.tree .treeLoaderNode {
+	color: #a0a0a0;
+}
+.tree .treeLoaderImg {
+	background-image: url('../../images/tree/loader.gif');
+}
+.tree .treeSelectedNode {
+	background-color: #d9e6f4 !important;
+}
+
+/* ************************************** */
+/* ****** Tree Editable plugin style ******** */
+/* ************************************** */
+.tree .treeNode .deleted {
+	color:#ff0000;
+	text-decoration: line-through;
+	font-style: italic;
+}
+.tree .treeNode .modified {	
+    background: transparent url(../../images/tree/dirty.gif) no-repeat 0 0;
+	display:inline-block;
+	-moz-user-select:none;
+}
+.tree  .addNodeBtn {
+	background: url(../../images/tree/add.gif) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	padding-left: 18px;
+}	
+.tree  .removeNodeBtn {
+	background: url(../../images/tree/delete.gif) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	padding-left: 18px;
+}	
+.tree  .editNodeBtn {
+	background: url(../../images/tree/edit.png) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	padding-left: 18px;
+}			
+.tree  .saveTreeBtn {
+	background: url(../../images/tree/save.gif) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	padding-left: 18px;
+}
+.tree  .subTreeReset{
+	background: url(../../images/tree/refresh.png) no-repeat;
+	padding: 1px;
+	background-position: 0 0 !important;
+	padding-left: 18px;
+}
+
+/* ************************************** */
+/* ****** Tree Demo plugin style ******** */
+/* ************************************** */
+.selectedNodeBtn {
+	background: url(../../images/tree/info.png) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	padding-left: 18px;
+}	
+.expandAllBtn {
+	background: url(../../images/tree/expandAll.png) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	padding-left: 18px;
+}	
+.collapseAllBtn {
+	background: url(../../images/tree/collapseAll.png) no-repeat;
+	background-position: 0 0 !important;
+	padding: 1px;
+	padding-left: 18px;
+}	
+
+/* ************************************** */
+/* ************ RssReader style ************** */
+/* ************************************** */
+.rssReader {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	position: relative;
+	border: 1px solid #ccc;
+	overflow:visible; 	
+}
+.rssReader div.rssReaderHeaderBox {
+	position:relative;
+	overflow:hidden;
+}
+.rssReader div.rssReaderHeader  {
+	background: #fafafa url(../../images/rss_reader/fhbg.gif) repeat-x bottom;
+	position: relative;
+	border-bottom: 0px;
+	overflow: hidden;
+	text-align: center;
+	line-height:24px;	
+	white-space:nowrap;
+	/*font-weight: bold;*/
+	-moz-user-select:none;
+}	
+.rssReader div.rssReaderBody  {
+	border-top: 0px;
+	border-bottom: 1px solid #ccc;
+	background: #fff;	
+	overflow:hidden; /*overflow: auto;*/
+	position: relative;
+}
+.rssReader div.rssReaderBody.loading{
+	width: 100%;
+	height: 100%;
+	background: url('../../images/rss_reader/loading.gif') no-repeat 50% 50%;
+}
+.rssReader div.rssReaderBody ul.rssReaderBodyTree {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	position: relative;
+}
+.rssReader div.rssReaderBody ul.rssReaderBodyTree li {
+	text-align: left;
+	margin:0;
+	padding:0;
+	list-style:none;
+	/*overflow:hidden;*/
+	border-bottom: 0px solid #fff;
+	cursor: pointer;
+}
+.rssReader div.rssReaderBody ul.rssReaderBodyTree li div.rssReaderRowTitle{
+	line-height:24px;	
+}
+.rssReader div.rssReaderBody ul.rssReaderBodyTree li div.rssReaderRowTitle a{
+	/*font-weight: bold;*/
+	color: #07487b;
+	/*text-decoration: none;*/
+}
+.rssReader div.rssReaderBody ul.rssReaderBodyTree li div.rssReaderRowTitle div.rssReaderRowTool{
+	width: 18px;
+	height: 18px;
+	background-image: url('../../images/rss_reader/expand.gif');
+}
+.rssReader div.rssReaderBody ul.rssReaderBodyTree li div.rssReaderRowDescription{
+	padding: 0 5px 8px 18px;
+}
+.rssReader li.erow  {
+	background-color: #f7f7f7;
+}
+.rssReader li.erow.over {
+	background-color: #eaeff4;
+}
+.rssReader li.selected {
+	background-color: #d9e6f4 !important;
+}
+.rssReader li.over {
+	background-color: #eaeff4;
+}
